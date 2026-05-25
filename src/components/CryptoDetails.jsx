@@ -1,17 +1,7 @@
 import React, { useState } from 'react'
 import millify from 'millify'
 import { Col, Typography, Select, Row } from 'antd';
-import {
-    MoneyCollectOutlined,
-    DollarCircleOutlined,
-    FundOutlined,
-    ExclamationCircleOutlined,
-    StopOutlined,
-    TrophyOutlined,
-    NumberOutlined,
-    ThunderboltOutlined,
-    CheckOutlined,
-} from "@ant-design/icons";
+import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, NumberOutlined, ThunderboltOutlined, CheckOutlined, } from "@ant-design/icons";
 import { useParams } from 'react-router-dom';
 import HTMLReactParser from 'html-react-parser/lib/index';
 import { useGetCrypioIdQuery, useGetCryptoHistoryQuery } from '../Services/CryptoApi';

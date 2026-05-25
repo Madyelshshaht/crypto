@@ -21,19 +21,12 @@ const Exchanges = () => {
         <>
             <div
                 className="header"
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    gap: "10px",
-                }}
+                style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", }}
             >
                 <Title level={2} className="home-title" style={{ textAlign: "center" }}>
                     Exchanges
                 </Title>
-                <MoneyCollectOutlined
-                    style={{ fontSize: "30px", marginTop: "-10px" }}
-                />
+                <MoneyCollectOutlined style={{ fontSize: "30px", marginTop: "-10px" }} />
             </div>
             <Row>
                 <Col span={6}>Exchanges</Col>
