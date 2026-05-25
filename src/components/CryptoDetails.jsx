@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import millify from 'millify'
-import { Col, Typography, Select, Row } from 'antd';
+import { Col, Typography,  Row } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, NumberOutlined, ThunderboltOutlined, CheckOutlined, } from "@ant-design/icons";
 import { useParams } from 'react-router-dom';
 import HTMLReactParser from 'html-react-parser/lib/index';
@@ -14,7 +14,8 @@ const { Title, Text } = Typography;
 
 const CryptoDetails = () => {
     const { coinId } = useParams();
-    const { timePeriod, setTimePeriod } = useState('7d');
+    // const { timePeriod, setTimePeriod } = useState('7d');
+    const [timePeriod] = useState('7d');
     // const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
     const { data: coinHistory } = useGetCryptoHistoryQuery(coinId, timePeriod)
